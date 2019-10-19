@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors | Raymond M. Serrato</title>
+    <link>/authors/</link>
+      <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
+    <description>Authors</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Raymond M. Serrato</copyright><lastBuildDate>Sun, 07 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/barchart.png</url>
+      <title>Authors</title>
+      <link>/authors/</link>
+    </image>
+    
+    <item>
+      <title></title>
+      <link>/authors/admin/</link>
+      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/admin/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m a social media analyst and open source investigator based in Berlin. My research on social media, disinformation, elections, and dangerous speech has been featured in &lt;a href=&#34;https://www.nytimes.com/2018/09/07/.../youtube-far-right-extremism.html&#34; target=&#34;_blank&#34;&gt;The New York Times&lt;/a&gt;, &lt;a href=&#34;https://www.theguardian.com/world/2018/apr/03/revealed-facebook-hate-speech-exploded-in-myanmar-during-rohingya-crisis&#34; target=&#34;_blank&#34;&gt;The Guardian&lt;/a&gt;, and &lt;a href=&#34;https://edition.cnn.com/2018/04/06/asia/myanmar-facebook-social-media-genocide-intl/index.html&#34; target=&#34;_blank&#34;&gt;CNN&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve worked at the United Nations High Commissioner for Human Rights and for the European Union, the Open Society Foundation, and civil society organizations on projects in countries ranging from Germany to Sri Lanka.&lt;/p&gt;
+
+&lt;p&gt;I’ve given talks and workshops for election observers, journalists, and human rights investigators. These trainings have taken place in Myanmar, Thailand, and throughout Europe. I use social media mining and verification techniques to investigate human rights violations and mis- and disinformation online.&lt;/p&gt;
+
+&lt;p&gt;In another life, I was a communications specialist in the US Navy, where I also learned how to dog down a hatch and fight a class &amp;ldquo;B&amp;rdquo; fire.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Robert Ford</title>
+      <link>/authors/robert-ford/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>/authors/robert-ford/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

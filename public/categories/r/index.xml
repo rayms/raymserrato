@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R | Raymond M. Serrato</title>
+    <link>/categories/r/</link>
+      <atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
+    <description>R</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Raymond M. Serrato</copyright><lastBuildDate>Sat, 17 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/barchart.png</url>
+      <title>R</title>
+      <link>/categories/r/</link>
+    </image>
+    
+    <item>
+      <title>Detecting disinformation about Democratic women in Facebook Groups</title>
+      <link>/post/test-post/</link>
+      <pubDate>Sat, 17 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>/post/test-post/</guid>
+      <description>
+
+
+&lt;p&gt;Recently, I’ve been experimenting with different technical methods for detecting disinformation online. Most open source researchers in this field use a variety of data points (or signals) in their investigations and they often rely on - and are limited by - the data that social media companies make available. We can sometimes draw conclusions about where a piece of disinformation originiated, the accounts that spread it, how quickly it traveled, and how much engagement it received, but it is almost impossible to assign attribution with public data.&lt;/p&gt;
+&lt;p&gt;One of the signals we &lt;em&gt;can&lt;/em&gt; use is &lt;strong&gt;temporality&lt;/strong&gt;, analyzing how often an account, page, or group generates content above some baseline that we associate with “normal” human behavior. We can also determine whether the timing and scale of that content appears coordinated. (Analysts can also, embarrassingly enough, misread temporal patterns. On Facebook, for example, it’s entirely normal to see the political parties post content in a coordinated manner, often as part of campaign messaging).&lt;/p&gt;
+&lt;p&gt;Coordination must be coupled with other signals. Hence, Facebook uses a term like “inauthentic coordinated behavior,”&lt;/p&gt;
+&lt;p&gt;As a case study, I used CrowdTangle to retrieve 157,677 posts in Facebook groups that mentioned Kamala Harris, Ilhan Omar, or Rashida Tlaib. Using this data, I explored which Facebook groups generated the most content and engagement, what kind of links group members shared, the language they used in messages, and how they interacted with other groups or pages on Facebook.&lt;/p&gt;
+&lt;p&gt;The temporal graph below shows the propagation of one link that I found suspicious - this link was posted almost simultaneously across different Facebook groups. The content of the link was stunningly outrageous, but many members in these groups reacted with belief.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;omar_link.png&#34; alt=&#34;Omar&#34; /&gt; In many cases, by the time I reviewed the posts they had been removed from the group. In some cases, however, the posts remained online and I was&lt;/p&gt;
+&lt;p&gt;Another way to detect behavior is through network analysis. For example, we can determine which domains are shared often together by the same pages or groups and construct a graph that shows the relationship between these domains. Such a graph helps us to map the domain-sharing behavior of accounts as well as the media consumption landscape. Coupled with other signals, like domain authority, we can determine where a domain is receiving disproportionate traffic from Facebook compared to the open web, or when clusters of pages or groups are sharing low-quality domains.&lt;/p&gt;
+&lt;p&gt;To illustrate this idea a bit more, I’ve included a graph below that shows the network of domains that tend to be shared together by sets of Facebook groups. We can see two distinct communities in the graph and that they map quite well onto the left-right divide of these groups with some interesting exceptions.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;web_domains.png&#34; alt=&#34;Network of domains&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Network of domains&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;We can see that the nodes are sized to the total number of interactions links received on Facebook. This variable can be modified to correspond to any number of variables, such as the number of times a domain’s links were shared or the domain authority of the link. We could therefore determine which Facebook Groups act as vectors of (possibly) &lt;em&gt;low-quality&lt;/em&gt; information.&lt;/p&gt;
+&lt;p&gt;This graph does a few other things as well.&lt;/p&gt;
+&lt;p&gt;I’ve often likened the forwarding of anonymous WhatsApp messages a bit like someone poisoning the well of a village. Facebook groups have also become cheap vectors of misinformation.&lt;/p&gt;
+&lt;p&gt;In my research, I have found dozens of groups where some accounts are using the platform to spread divisive and false content. The accounts engaged in these activities often bear the hallmarks of inauthenticity and they range from high-quality dupes to zombie accounts. The most polished accounts contain profile photos and other images lifted wholesale from public Instagram accounts; contradictory information about location and work; and oddly similar phrases of support for a political party or official. The latter accounts may be classified as “astroturfing” and may be part of a political disinformation effort.&lt;/p&gt;
+&lt;p&gt;Network graphs are&lt;/p&gt;
+&lt;p&gt;I constructed the graph by extracting the domains&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Methodology&lt;/strong&gt; I used CrowdTangle to search for posts in Facebook Groups that mentioned “Kamala Harris”, “Ilhan Omar”, and “Rashida Tlaib” over a one year period. I then extracted the&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hello R Markdown</title>
+      <link>/post/2015-07-23-r-rmarkdown/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      <guid>/post/2015-07-23-r-rmarkdown/</guid>
+      <description>
+
+
+&lt;div id=&#34;r-markdown&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;R Markdown&lt;/h1&gt;
+&lt;p&gt;This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see &lt;a href=&#34;http://rmarkdown.rstudio.com&#34; class=&#34;uri&#34;&gt;http://rmarkdown.rstudio.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can embed an R code chunk like this:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;summary(cars)
+##      speed           dist       
+##  Min.   : 4.0   Min.   :  2.00  
+##  1st Qu.:12.0   1st Qu.: 26.00  
+##  Median :15.0   Median : 36.00  
+##  Mean   :15.4   Mean   : 42.98  
+##  3rd Qu.:19.0   3rd Qu.: 56.00  
+##  Max.   :25.0   Max.   :120.00
+fit &amp;lt;- lm(dist ~ speed, data = cars)
+fit
+## 
+## Call:
+## lm(formula = dist ~ speed, data = cars)
+## 
+## Coefficients:
+## (Intercept)        speed  
+##     -17.579        3.932&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;including-plots&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Including Plots&lt;/h1&gt;
+&lt;p&gt;You can also embed plots. See Figure &lt;a href=&#34;#fig:pie&#34;&gt;1&lt;/a&gt; for example:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;par(mar = c(0, 1, 0, 1))
+pie(
+  c(280, 60, 20),
+  c(&amp;#39;Sky&amp;#39;, &amp;#39;Sunny side of pyramid&amp;#39;, &amp;#39;Shady side of pyramid&amp;#39;),
+  col = c(&amp;#39;#0292D8&amp;#39;, &amp;#39;#F7EA39&amp;#39;, &amp;#39;#C4B632&amp;#39;),
+  init.angle = -50, border = NA
+)&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:pie&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;/post/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png&#34; alt=&#34;A fancy pie chart.&#34; width=&#34;672&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 1: A fancy pie chart.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
