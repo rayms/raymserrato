@@ -19,7 +19,7 @@ social:
   link: https://twitter.com/raymserrato
 - icon: github-square
   icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://github.com/rayms
 - icon: linkedin
   icon_pack: fab
   link: https://www.linkedin.com/in/raymondmserrato/
