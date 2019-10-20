@@ -12,7 +12,7 @@ role: []
 social:
 - icon: envelope
   icon_pack: fa
-  link: "mailto:raymondmserrato@gmail.com"
+  link: mailto:raymondmserrato@gmail.com
   link: '#contact'
 - icon: twitter-square
   icon_pack: fab
